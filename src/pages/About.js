@@ -6,7 +6,8 @@ import Image from "next/image";
 import irfanHaider from "../../public/images/profile/irfan.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/Components/Skills";
-
+import Experience from "@/Components/Experience";
+import Education from "@/Components/Education";
 const AnimatedNumber = ({ value }) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
@@ -23,8 +24,6 @@ const AnimatedNumber = ({ value }) => {
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
       }
-      console.log(latest);
-      console.log(ref.current.value);
     });
   }, [springValue, value]);
   return <span ref={ref}></span>;
@@ -101,7 +100,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Skills/>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
