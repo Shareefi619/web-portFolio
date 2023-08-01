@@ -7,6 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "@/Components/Icons";
 import project1 from "../../public/images/projects/forkify.PNG";
 import { motion } from "framer-motion";
+import TransitionEffect from "@/Components/TransitionEffect";
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -119,6 +120,7 @@ const Project = () => {
         <title>Irfan Haider | Project Page</title>
         <meta name="description" content="description"></meta>
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16 ">
           <AnimatedText

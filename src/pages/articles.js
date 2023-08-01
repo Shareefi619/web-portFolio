@@ -11,6 +11,7 @@ import article4 from "../../public/images/articles/create modal component in rea
 import article5 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
 
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/Components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -112,6 +113,7 @@ const articles = () => {
         <title>Irfan Haider | Articles Page</title>
         <meta name="description" content="description"></meta>
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-12 mb-36">
           <AnimatedText
