@@ -4,11 +4,11 @@ import Layout from "@/Components/Layout";
 import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import article2 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import article3 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import article4 from "../../public/images/articles/create modal component in react using react portals.png";
-import article5 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
+import article1 from "public/images/articles/pagination component in reactjs.jpg";
+import article2 from "public/images/articles/form validation in reactjs using custom react hook.png";
+import article3 from "public/images/articles/smooth scrolling in reactjs.png";
+import article4 from "public/images/articles/create modal component in react using react portals.png";
+import article5 from "public/images/articles/todo list app built using react redux and framer motion.png";
 
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
