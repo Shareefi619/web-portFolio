@@ -3,22 +3,22 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import {
-  TwitterIcon,
-  GithubIcon,
-  LinkedInIcon,
-  PinterestIcon,
-  DribbbleIcon,
-  SunIcon,
-  MoonIcon,
-} from "./Icons";
+import { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from "./Icons";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
-const CustomLink = ({ href, title, className = "https://twitter.com" }) => {
+const CustomLink = ({
+  href,
+  title,
+  className = "https://www.linkedin.com/in/irfan-haider-shareefi-09907424b/",
+}) => {
   const router = useRouter();
 
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link
+      aria-label={href}
+      href={href}
+      className={`${className} relative group`}
+    >
       {title}
       <span
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5  group-hover:w-full transition-[width] ease duration-300 ${
@@ -39,6 +39,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   return (
     <button
       href={href}
+      aria-label={href}
       className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={handleClick}
     >
@@ -63,6 +64,7 @@ const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
+        aria-label="home-page"
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
       >
@@ -84,23 +86,29 @@ const NavBar = () => {
       </button>
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
-          <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/About" title="About" className="mx-4" />
-          <CustomLink href="/Project" title="Projects" className="mx-4" />
-          <CustomLink href="/articles" title="Articles" className="ml-4" />
+          <CustomLink
+            aria-label="home-page"
+            href="/"
+            title="Home"
+            className="mr-4"
+          />
+          <CustomLink
+            aria-label="about-page"
+            href="/About"
+            title="About"
+            className="mx-4"
+          />
+          <CustomLink
+            aria-label="project-page"
+            href="/Project"
+            title="Projects"
+            className="mx-4"
+          />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com"
-            target="_blank"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mr-3"
-          >
-            <TwitterIcon />
-          </motion.a>
-          <motion.a
-            href="https://twitter.com"
+            aria-label="github"
+            href="https://github.com/Shareefi619?tab=repositories"
             target="_blank"
             className="w-6 mr-3"
             whileHover={{ y: -2 }}
@@ -109,7 +117,8 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            aria-label="linkdin"
+            href="https://www.linkedin.com/in/irfan-haider-shareefi-09907424b/"
             target="_blank"
             className="w-6 mr-3"
             whileHover={{ y: -2 }}
@@ -117,25 +126,8 @@ const NavBar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
-            href="https://twitter.com"
-            target="_blank"
-            className="w-6 mr-3 bg-light rounded-full"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <PinterestIcon />
-          </motion.a>
-          <motion.a
-            href="https://twitter.com"
-            target="_blank"
-            className="w-6 mr-3"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <DribbbleIcon />
-          </motion.a>
           <button
+            aria-label="dark-mode"
             onClick={() => setmode(mode === "light" ? "dark" : "light")}
             className={`ml-3 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
@@ -157,42 +149,31 @@ const NavBar = () => {
         >
           <nav className="flex flex-col items-center justify-center ">
             <CustomMobileLink
+              aria-label="home-page"
               href="/"
               title="Home"
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
+              aria-label="about-page"
               href="/About"
               title="About"
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
+              aria-label="project-page"
               href="/Project"
               title="Projects"
-              className=""
-              toggle={handleClick}
-            />
-            <CustomMobileLink
-              href="/articles"
-              title="Articles"
               className=""
               toggle={handleClick}
             />
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
-              href="https://twitter.com"
-              target="_blank"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mr-3 sm:mx-1"
-            >
-              <TwitterIcon />
-            </motion.a>
-            <motion.a
-              href="https://twitter.com"
+              aria-label="github"
+              href="https://github.com/Shareefi619?tab=repositories"
               target="_blank"
               className="w-6 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1"
               whileHover={{ y: -2 }}
@@ -201,7 +182,8 @@ const NavBar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="https://twitter.com"
+              aria-label="LinkeIn"
+              href="https://www.linkedin.com/in/irfan-haider-shareefi-09907424b/"
               target="_blank"
               className="w-6 mr-3 sm:mx-1"
               whileHover={{ y: -2 }}
@@ -209,25 +191,9 @@ const NavBar = () => {
             >
               <LinkedInIcon />
             </motion.a>
-            <motion.a
-              href="https://twitter.com"
-              target="_blank"
-              className="w-6 mr-3 bg-light rounded-full sm:mx-1"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <PinterestIcon />
-            </motion.a>
-            <motion.a
-              href="https://twitter.com"
-              target="_blank"
-              className="w-6 mr-3 sm:mx-1"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <DribbbleIcon />
-            </motion.a>
+
             <button
+              aria-label="dark-mode"
               onClick={() => setmode(mode === "light" ? "dark" : "light")}
               className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1 ${
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"

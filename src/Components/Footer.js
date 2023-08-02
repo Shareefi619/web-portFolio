@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer
-      className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light
+      className="w-full h-4 border-t-2 border-solid border-dark font-small dark:text-light
      dark:border-light sm:text-base"
     >
       <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
@@ -15,13 +15,10 @@ const Footer = () => {
             &#9825;
           </span>
           by &nbsp;
-          <Link href="/" className="underline underline-offset-2">
+          <Link aria-label="home-page" href="/" className="underline underline-offset-2">
             Irfan Haider
           </Link>
         </div>
-        <Link href="/" target="_blank" className="underline underline-offset-2">
-          Say hello
-        </Link>
       </Layout>
     </footer>
   );

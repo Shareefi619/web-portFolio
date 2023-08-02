@@ -21,6 +21,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
             {position}&nbsp;
             <a
+              aria-label={companyLink}
               href={companyLink}
               target="_blank"
               className=" text-primary dark:text-primaryDark capitalize "
@@ -52,7 +53,7 @@ const Experience = () => {
       <div ref={ref} className="w-[75%] relative mx-auto lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top
           md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col ml-4 items-start justify-between sm:ml-2">
@@ -61,40 +62,10 @@ const Experience = () => {
             company="Geeks OF Kolachi"
             time="Summer 2023"
             address="7th floor Fortune Tower Sara-e-Failsal, karachi, Sindh "
-            work="I commenced my work at GOK, where I was part of a team assigned to create user-friendly websites using React and Next.js.
-               Additionally, we delved into developing hybrid mobile applications on the React Native platform."
-          />
-          <Details
-            position="Web Developer"
-            company="Geeks OF Kolachi"
-            time="winter 2023"
-            address="7th floor Fortune Tower Sara-e-Failsal, karachi, Sindh "
-            work="As a junior developer, I began my journey at GOK, joining a team with the responsibility of building user-friendly websites using React and Next.js. During my time there, I also had the opportunity to contribute to the development of hybrid mobile applications on the React Native platform. It was an exciting learning experience, and
-             I actively participated in various projects to enhance my skills and knowledge in web and mobile development."
-          />
-          <Details
-            position="Web Developer"
-            company="Geeks OF Kolachi"
-            time="winter 2023"
-            address="7th floor Fortune Tower Sara-e-Failsal, karachi, Sindh "
-            work="As a junior developer, I began my journey at GOK, joining a team with the responsibility of building user-friendly websites using React and Next.js. During my time there, I also had the opportunity to contribute to the development of hybrid mobile applications on the React Native platform. It was an exciting learning experience, and
-             I actively participated in various projects to enhance my skills and knowledge in web and mobile development."
-          />
-          <Details
-            position="Web Developer"
-            company="Geeks OF Kolachi"
-            time="winter 2023"
-            address="7th floor Fortune Tower Sara-e-Failsal, karachi, Sindh "
-            work="As a junior developer, I began my journey at GOK, joining a team with the responsibility of building user-friendly websites using React and Next.js. During my time there, I also had the opportunity to contribute to the development of hybrid mobile applications on the React Native platform. It was an exciting learning experience, and
-             I actively participated in various projects to enhance my skills and knowledge in web and mobile development."
-          />
-          <Details
-            position="Web Developer"
-            company="Geeks OF Kolachi"
-            time="winter 2023"
-            address="7th floor Fortune Tower Sara-e-Failsal, karachi, Sindh "
-            work="As a junior developer, I began my journey at GOK, joining a team with the responsibility of building user-friendly websites using React and Next.js. During my time there, I also had the opportunity to contribute to the development of hybrid mobile applications on the React Native platform. It was an exciting learning experience, and
-             I actively participated in various projects to enhance my skills and knowledge in web and mobile development."
+            work="For the past month, I have been interning at GOK, where I have been immersed in
+             a valuable learning experience with various web development tools such as React, Next.js, 
+             Tailwind CSS, MongoDB, Express, and Node.js. This internship has been an excellent opportunity
+              for me to enhance my skills and gain practical experience in the field of web development."
           />
         </ul>
       </div>

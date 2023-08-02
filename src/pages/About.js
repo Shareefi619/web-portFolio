@@ -3,7 +3,7 @@ import Head from "next/head";
 import AnimatedText from "@/Components/AnimatedText";
 import Layout from "@/Components/Layout";
 import Image from "next/image";
-import irfanHaider from "public/images/profile/irfan.jpg";
+import irfanHaider from "../../public/images/profile/irfan.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/Components/Skills";
 import Experience from "@/Components/Experience";
@@ -50,9 +50,9 @@ const About = () => {
                 Biography
               </h2>
               <p className="font-medium my-4">
-                {`Hi, I'm CodeBucks, a web developer and UI/UX designer with a
+                {`Hi, I'm Irfan, a web developer with a
                 passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
+                digital experiences. With 1 year of experience in the field. I
                 am always looking for new and innovative ways to bring my
                 clients' visions to life.`}
               </p>
@@ -62,7 +62,7 @@ const About = () => {
                 enjoyable experiences for users.`}
               </p>
               <p className="font-medium my-4">
-               {`Whether I'm working on a website, mobile app, or other digital
+                {`Whether I'm working on a website, mobile app, or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to
@@ -72,6 +72,8 @@ const About = () => {
             <div className=" col-span-3 h-max relative rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className=" absolute top-0 -right-3 -z-10 w-[102%] h-[103%]  rounded-[2rem] bg-dark dark:bg-light" />
               <Image
+                draggable={false}
+                aria-label="profile-picture"
                 src={irfanHaider}
                 alt="Irfan Haider"
                 className="w-full h-[500px] rounded-2xl"
@@ -82,7 +84,7 @@ const About = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className=" inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumber value={50} />+
+                  <AnimatedNumber value={5} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Satisfied Clients
@@ -91,7 +93,7 @@ const About = () => {
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className=" inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   {" "}
-                  <AnimatedNumber value={20} />+
+                  <AnimatedNumber value={5} />+
                 </span>
                 <h2 className="text-lg font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects Completed
@@ -99,7 +101,7 @@ const About = () => {
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className=" inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumber value={2} />+
+                  <AnimatedNumber value={1} />+
                 </span>
                 <h2 className="text-lg font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   years of Experience

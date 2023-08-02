@@ -18,7 +18,9 @@ const Details = ({ type, time, place, info }) => {
         transition={{ duration: 0.5, type: "spring" }}
       >
         <div>
-          <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
+          <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+            {type}
+          </h3>
           <span className=" capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
             {time} | {place}
           </span>
@@ -34,11 +36,12 @@ const Education = () => {
     target: ref,
     offset: ["start end", "center start"],
   });
-  const { scrollY } = useScroll();
 
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">Education</h2>
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+        Education
+      </h2>
       <div ref={ref} className="w-[75%] relative mx-auto lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
