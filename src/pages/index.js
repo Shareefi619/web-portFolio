@@ -30,7 +30,7 @@ export default function Home() {
                 draggable={false}
               />
             </div>
-            <div className="w-1/2 mx-24 ml-6 mb-32 flex flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="w-1/2 mb-12 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-4xl !text-left mt-0 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"

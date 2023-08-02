@@ -38,7 +38,7 @@ const About = () => {
         <meta name="description" content="description"></meta>
       </Head>
       <TransitionEffect />
-      <main className="flex w-full flex-col items-center justify-center px-16 dark:text-light">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="py-16">
           <AnimatedText
             text="Passion Fuels Purpose!"

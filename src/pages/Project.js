@@ -13,11 +13,11 @@ const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
-      className="w-[75%] mx-[15%] flex items-center justify-center rounded-br-2xl rounded-3xl relative border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light
+      className="w-full flex items-center justify-center rounded-br-2xl rounded-3xl relative border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light
      lg:flex-col lg:p-8 sm:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
       <div
-        className=" absolute top-0 -right-3 -z-10 w-[102%] h-[103%]  rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%]  rounded-[2rem] bg-dark rounded-br-1xl dark:bg-light rounded-br-3xl
        xs:-right-2 xs:h-[102%] sm:h-[102%] sm:w-full sm:rounded-[1.5rem] xs:w-full xs:rounded-[1.5rem]"
       />
 
@@ -31,7 +31,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           aria-label="home-page"
           src={img}
           alt={title}
-          className="w-full h-[350px] ml-12"
+          className="w-full h-[350px] ml-12 sm:ml-0 xs:ml-0"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
@@ -76,7 +76,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Projects = ({ type, title, img, link, github }) => {
   return (
     <article
-      className="w-[75%] mx-[15%] flex  flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:border-light dark:bg-dark p-6 relative
+      className="w-[75%] mx-[15%] flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:border-light dark:bg-dark p-6 relative
      xs:p-4"
     >
       <div className=" absolute top-0 -right-3 -z-10 w-[101%] h-[102%]  rounded-[2rem] bg-dark dark:bg-light rounded-br-1xl md:-right-2 md:w-[101%] sm:h-[102%] xs:border-[1.5rem]" />
