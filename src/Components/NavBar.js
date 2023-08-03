@@ -192,19 +192,21 @@ const NavBar = () => {
               <LinkedInIcon />
             </motion.a>
 
-            <button
-              aria-label="dark-mode"
-              onClick={() => setmode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1 ${
-                mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-              }`}
-            >
-              {mode === "dark" ? (
-                <SunIcon className={"fill-dark"} />
-              ) : (
-                <MoonIcon className={"fill-dark"} />
-              )}
-            </button>
+            <div>
+              <button
+                aria-label="dark-mode"
+                onClick={() => setmode(mode === "light" ? "dark" : "light")}
+                className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1 ${
+                  mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+                }`}
+              >
+                {mode === "dark" ? (
+                  <SunIcon className={"fill-dark"} />
+                ) : (
+                  <MoonIcon className={"fill-dark"} />
+                )}
+              </button>
+            </div>
           </nav>
         </motion.div>
       ) : null}

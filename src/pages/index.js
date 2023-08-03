@@ -42,6 +42,7 @@ export default function Home() {
                 web development.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
+                <div>
                 <Link
                   aria-label="resume"
                   href="/resume.pdf"
@@ -54,6 +55,7 @@ export default function Home() {
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
+                </div>
                 <Link
                   aria-label="email-address"
                   href="mailto:irfanhaidershareefi6@gmail.com"
