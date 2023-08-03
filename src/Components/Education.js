@@ -8,7 +8,7 @@ const Details = ({ type, time, place, info }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+      className="my-8 first:mt-0 last:mb-0 w-3/5 w- mx-auto flex flex-col items-center justify-between md:w80%]"
     >
       <LiIcon reference={ref} />
       {/* The below code not working */}
@@ -42,11 +42,11 @@ const Education = () => {
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Education
       </h2>
-      <div ref={ref} className="w-[75%] relative mx-auto lg:w-[90%] md:w-full">
+      <div ref={ref} className="w-3/4 relative mx-auto lg:w-11/12 md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top
-          md:w-[2px] md:left-[30px] xs:left-[20px]"
+          className="absolute left-9 top-0 w-1 h-full bg-dark dark:bg-light origin-top
+          md:w-0.5 md:left-[30px] xs:left-w-5"
         />
         <ul className="w-full flex flex-col ml-4 items-start justify-between sm:ml-2">
           <Details

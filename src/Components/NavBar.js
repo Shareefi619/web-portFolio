@@ -21,7 +21,7 @@ const CustomLink = ({
     >
       {title}
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5  group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-0.5 inline-block bg-dark absolute left-0 -bottom-0.5  group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
         } dark:bg-light`}
       >
@@ -45,7 +45,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     >
       {title}
       <span
-        className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5  group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-0.5 inline-block bg-light absolute left-0 -bottom-0.5  group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
         } dark:bg-dark`}
       >
@@ -126,20 +126,24 @@ const NavBar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <div className="w-[36px] h-8">
-            <button
-              aria-label="dark-mode"
-              onClick={() => setmode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full !p-1 ${
-                mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-              }`}
-            >
-              {mode === "dark" ? (
+          <div className="h-5 w-9">
+          <button
+            aria-label="dark-mode"
+            onClick={() => setmode(mode === "light" ? "dark" : "light")}
+            className={`ml-3 flex items-center justify-center rounded-full !p-1 ${
+              mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+            }`}
+          >
+            {mode === "dark" ? (
+              
                 <SunIcon className={"fill-dark"} />
-              ) : (
+              
+            ) : (
+              
                 <MoonIcon className={"fill-dark"} />
-              )}
-            </button>
+              
+            )}
+          </button>
           </div>
         </nav>
       </div>
@@ -147,7 +151,7 @@ const NavBar = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50", y: "-50" }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
+          className="min-w-[70vw] w- flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
         >
           <nav className="flex flex-col items-center justify-center ">
             <CustomMobileLink
@@ -194,7 +198,7 @@ const NavBar = () => {
               <LinkedInIcon />
             </motion.a>
 
-            <div className="w-[36px] h-8">
+            <div className="w-9 h-8">
               <button
                 aria-label="dark-mode"
                 onClick={() => setmode(mode === "light" ? "dark" : "light")}
@@ -212,7 +216,7 @@ const NavBar = () => {
           </nav>
         </motion.div>
       ) : null}
-      <div className=" absolute left-[50%] top-2 translate-x-[-50%]">
+      <div className=" absolute left-1/2 top-2 -translate-x-1/2">
         <Logo />
       </div>
     </header>

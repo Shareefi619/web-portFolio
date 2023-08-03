@@ -76,7 +76,7 @@ const About = () => {
                 aria-label="profile-picture"
                 src={irfanHaider}
                 alt="Irfan Haider"
-                className="w-full h-[500px] rounded-2xl"
+                className="w-full h-[400px] lg:sm:h-[450px] sm:h-[300px] xs:h-[400px] rounded-2xl object-cover bg-left"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
