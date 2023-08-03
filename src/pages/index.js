@@ -42,7 +42,7 @@ export default function Home() {
                 web development.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
-                <div className="sm:mx-5 xs:mx-2">
+                <div className="sm:!mx-5 xs:!mx-2">
                 <Link
                   aria-label="resume"
                   href="/resume.pdf"
