@@ -42,7 +42,7 @@ export default function Home() {
                 web development.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
-                <div className="sm:!mx-5 xs:!mx-2">
+                <div className="sm:mx-8 xs:mx-8">
                 <Link
                   aria-label="resume"
                   href="/resume.pdf"
@@ -60,7 +60,7 @@ export default function Home() {
                   aria-label="email-address"
                   href="mailto:irfanhaidershareefi6@gmail.com"
                   target="_blank"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light sm:ml-0 xs:ml-0"
                 >
                   Contact
                 </Link>
