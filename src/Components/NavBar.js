@@ -126,19 +126,21 @@ const NavBar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <button
-            aria-label="dark-mode"
-            onClick={() => setmode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
-              mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-            }`}
-          >
-            {mode === "dark" ? (
-              <SunIcon className={"fill-dark"} />
-            ) : (
-              <MoonIcon className={"fill-dark"} />
-            )}
-          </button>
+          <div className="w-[36px] h-8">
+            <button
+              aria-label="dark-mode"
+              onClick={() => setmode(mode === "light" ? "dark" : "light")}
+              className={`ml-3 flex items-center justify-center rounded-full !p-1 ${
+                mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+              }`}
+            >
+              {mode === "dark" ? (
+                <SunIcon className={"fill-dark"} />
+              ) : (
+                <MoonIcon className={"fill-dark"} />
+              )}
+            </button>
+          </div>
         </nav>
       </div>
       {isOpen ? (
@@ -170,7 +172,7 @@ const NavBar = () => {
               toggle={handleClick}
             />
           </nav>
-          <nav className="flex items-center justify-center flex-wrap mt-2">
+          <nav className="flex !items-center justify-center flex-wrap mt-2">
             <motion.a
               aria-label="github"
               href="https://github.com/Shareefi619?tab=repositories"
@@ -192,7 +194,7 @@ const NavBar = () => {
               <LinkedInIcon />
             </motion.a>
 
-            <div>
+            <div className="w-[36px] h-8">
               <button
                 aria-label="dark-mode"
                 onClick={() => setmode(mode === "light" ? "dark" : "light")}
