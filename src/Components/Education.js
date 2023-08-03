@@ -42,10 +42,10 @@ const Education = () => {
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Education
       </h2>
-      <div ref={ref} className="w-3/4 relative mx-auto lg:w-11/12 md:w-full">
+      <div ref={ref} className="w-[75%] relative mx-auto lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-1 h-full bg-dark dark:bg-light origin-top
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top
           md:w-[1px] md:left-[30px] xs:left-5"
         />
         <ul className="w-full flex flex-col ml-4 items-start justify-between sm:ml-2">
