@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/Components/Icons";
 import project1 from "../../public/images/projects/forkify.png";
+import project2 from "../../public/images/projects/loginpage.PNG";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
 
@@ -159,10 +160,10 @@ const Project = () => {
             <div className="col-span-6 sm:col-span-12">
               <Projects
                 type="Project 1"
-                title="Food Recipe Website"
-                link="https://myrecipes-irfan.netlify.app/"
-                github="https://github.com/Shareefi619/Forkify-App"
-                img={project1}
+                title="Login/Signup Page"
+                link="https://login-signup-page-withauthentication.netlify.app/login"
+                github="https://github.com/Shareefi619/GOK-nextjs-Project"
+                img={project2}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
