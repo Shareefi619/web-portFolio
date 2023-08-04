@@ -5,9 +5,8 @@ import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/Components/Icons";
-import project1 from "../../public/images/projects/forkify.PNG";
-import project2 from "../../public/images/projects/forkify.PNG";
-// import project2 from "../../public/images/projects/loginpage.PNG";
+import project1 from "../../public/images/projects/forkify.png";
+import project2 from "../../public/images/projects/loginpage.PNG";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
 
