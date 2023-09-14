@@ -181,6 +181,13 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
+            <CustomMobileLink
+              aria-label="certificate-page"
+              href="/Certification"
+              title="Certificates"
+              className=""
+              toggle={handleClick}
+            />
           </nav>
           <nav className="flex !items-center justify-center flex-wrap mt-2">
             <motion.a
