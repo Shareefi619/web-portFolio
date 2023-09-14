@@ -62,10 +62,7 @@ const Experience = () => {
             company="Geeks OF Kolachi"
             time="Summer 2023"
             address="7th floor Fortune Tower Sara-e-Failsal, karachi, Sindh "
-            work="For the past month, I have been interning at GOK, where I have been immersed in
-             a valuable learning experience with various web development tools such as React, Next.js, 
-             Tailwind CSS, MongoDB, Express, and Node.js. This internship has been an excellent opportunity
-              for me to enhance my skills and gain practical experience in the field of web development."
+            work="Over the last three months, I've held an internship position at Geeks of Kolachi, also known as GoK. During this period, my role has been that of a front-end software engineer, and I've been actively engaged in tasks involving React.js, TypeScript, Tailwind CSS, Material UI, and DaisyUI. Additionally, I've acquired skills related to API integration and the development of login and signup APIs."
           />
         </ul>
       </div>

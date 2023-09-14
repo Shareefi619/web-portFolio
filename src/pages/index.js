@@ -45,7 +45,7 @@ export default function Home() {
                 <div className="sm:mx-8 xs:mx-8">
                 <Link
                   aria-label="resume"
-                  href="/resume.pdf"
+                  href="/IrfanHaider.pdf"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg 
                   font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent
