@@ -7,7 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "@/Components/Icons";
 import project1 from "../../public/images/projects/forkify.png";
 import project2 from "../../public/images/projects/loginpage.png";
-import project3 from "../../public/images/projects/movieapp.png"
+import project3 from "../../src/assets/projects/movieapp.png"
 import { motion } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
 
