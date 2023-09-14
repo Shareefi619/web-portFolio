@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HireMe from "@/Components/HireMe";
 import { LinkArrow } from "@/Components/Icons";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../assets/profile/developer-pic-1.png";
 import AnimatedText from "@/Components/AnimatedText";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/Components/TransitionEffect";

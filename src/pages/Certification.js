@@ -3,7 +3,8 @@ import Layout from "@/Components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import React, { useRef } from "react";
-import javascript from "../../public/images/certificates/JavaScript.png";
+import javascript from "../../src/assets/certificates/JavaScript.png";
+import reactCert from "../../src/assets/certificates/ReactCertificate.png";
 import Image from "next/image";
 import { motion, useMotionValue } from "framer-motion";
 
@@ -83,7 +84,7 @@ function Certification() {
               title="Front End Development Libraries"
               date="July, 04 2023"
               link="https://www.freecodecamp.org/certification/IrfanHaiderShareefi/front-end-development-libraries"
-              img={javascript}
+              img={reactCert}
             />
           </ul>
         </Layout>
