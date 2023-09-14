@@ -5,10 +5,12 @@ import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/Components/Icons";
-import project1 from "../../public/images/projects/forkify.png";
-import project2 from "../../public/images/projects/loginpage.png";
+import project1 from "public/images/projects/forkify.png";
+import project2 from "public/images/projects/loginpage.png";
+import project3 from "public/images/projects/movieapp.PNG"
 import { motion } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
+
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -168,11 +170,11 @@ const Project = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Projects
-                type="Project 1"
-                title="Food Recipe Website"
-                link="https://myrecipes-irfan.netlify.app/"
-                github="https://github.com/Shareefi619/Forkify-App"
-                img={project1}
+                type="Project 2"
+                title="Movie Database"
+                link="https://movie-database-webapp.netlify.app/"
+                github="https://github.com/Shareefi619/movie-database"
+                img={project3}
               />
             </div>
           </div>

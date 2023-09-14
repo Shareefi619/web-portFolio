@@ -104,6 +104,12 @@ const NavBar = () => {
             title="Projects"
             className="mx-4"
           />
+          <CustomLink
+            aria-label="certification-page"
+            href="/Certification"
+            title="Certifications"
+            className="mx-4"
+          />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
