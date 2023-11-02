@@ -6,11 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/Components/Icons";
 import project1 from "../../src/assets/projects/forkify.png";
-import project2 from "../../src/assets/projects/loginpage.png";
-import project3 from "../../src/assets/projects/movieapp.png"
+import ticket from "../../src/assets/projects/travelwebsite.png";
+import project3 from "../../src/assets/projects/movieapp.png";
+import meccaGaming from "../../src/assets/projects/meccaGaming.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
-
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -66,7 +66,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             aria-label={link}
             href={link}
             alt={title}
-            className="ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
+            className="ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base hover:dark:bg-green-700"
           >
             Visit Project!
           </Link>
@@ -152,20 +152,20 @@ const Project = () => {
             <div className=" col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="Food Recipe Website"
-                summary="A User-Friendly Food Recipe Website that provides different recipes from all around the world to their users."
-                link="https://myrecipes-irfan.netlify.app/"
-                github="https://github.com/Shareefi619/Forkify-App"
-                img={project1}
+                title="Mecca of Gaming"
+                summary="Welcome to 'A Mecca of Gaming' – your ultimate destination for sports enthusiasts. Explore a vast collection of sports apparel while staying updated with live football matches. Discover match schedules and locations, and gear up for an immersive sports experience, all in one place."
+                link="https://mecca-gaming.netlify.app/about"
+                github="https://github.com/Shareefi619/mecca-gaming"
+                img={meccaGaming}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Projects
                 type="Project 1"
-                title="Login/Signup Page"
-                link="https://login-signup-page-withauthentication.netlify.app/login"
-                github="https://github.com/Shareefi619/GOK-nextjs-Project"
-                img={project2}
+                title="Ticketing Website"
+                link="https://travelwithus-ticketing.netlify.app/"
+                github="https://github.com/Shareefi619/Ticketing-website"
+                img={ticket}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -175,6 +175,16 @@ const Project = () => {
                 link="https://movie-database-webapp.netlify.app/"
                 github="https://github.com/Shareefi619/movie-database"
                 img={project3}
+              />
+            </div>
+            <div className=" col-span-12">
+              <FeaturedProject
+                type="Featured Project"
+                title="Food Recipe Website"
+                summary="A User-Friendly Food Recipe Website that provides different recipes from all around the world to their users."
+                link="https://myrecipes-irfan.netlify.app/"
+                github="https://github.com/Shareefi619/Forkify-App"
+                img={project1}
               />
             </div>
           </div>

@@ -64,6 +64,13 @@ const Experience = () => {
             address="7th floor Fortune Tower Sara-e-Failsal, karachi, Sindh "
             work="Over the last three months, I've held an internship position at Geeks of Kolachi, also known as GoK. During this period, my role has been that of a front-end software engineer, and I've been actively engaged in tasks involving React.js, TypeScript, Tailwind CSS, Material UI, and DaisyUI. Additionally, I've acquired skills related to API integration and the development of login and signup APIs."
           />
+           <Details
+            position="Front-End Developer"
+            company="TrackDiv"
+            time="Fall 2023"
+            address="D.H.A. Phase 7 Phase 2 Commercial Area Defence Housing Authority, Karachi "
+            work="I work as a front-end developer at TrackDiv, where my role involves creating and delivering projects tailored to meet clients' requirements. Additionally, I handle client management on the Freelancer.com platform."
+          />
         </ul>
       </div>
     </div>
